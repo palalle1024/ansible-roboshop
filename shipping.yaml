@@ -26,7 +26,7 @@
 
   - name: create Roboshop user 
     ansible.builtin.user:
-      name: Roboshop 
+      name: roboshop 
       shell: /sbin/nologin/
       system: true 
       home: /app 
@@ -52,6 +52,7 @@
     ansible.builtin.command: mv target/shipping-1.0.jar shipping.jar 
     args:
       chdir: /app
+
 
 
   - name: copying service to  systemd 

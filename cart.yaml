@@ -38,7 +38,7 @@
 
   - name: installing dependencies 
     community.general.npm: 
-      dest: /app
+      executable: /app
 
   - name: copying cart service to systemd service 
     ansible.builtin.copy: 

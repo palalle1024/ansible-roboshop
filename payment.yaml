@@ -13,7 +13,7 @@
   - name: create app directory 
     ansible.builtin.file: 
       path: /app 
-      state: directoryy 
+      state: directory
   
   - name: create user 
     ansible.builtin.user: 
@@ -24,7 +24,7 @@
 
   - name: downloading code 
     ansible.builtin.get_url: 
-      src: https://roboshop-artifacts.s3.amazonaws.com/payment-v3.zip 
+      url: https://roboshop-artifacts.s3.amazonaws.com/payment-v3.zip 
       dest: /tmp/.zip 
 
   - name: unzipping the code 

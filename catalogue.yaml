@@ -40,6 +40,11 @@
     community.general.npm:
       path: /app 
 
+  - name: remove default systemd
+    ansible.builtin.file:
+      path: /etc/systemd/system/catalogue.service 
+      state: absent 
+
   - name: copy catalogue service to system directory 
     ansible.builtin.copy:
       src: catalogue.service 

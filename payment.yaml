@@ -43,7 +43,7 @@
   - name: copy payment as systemd service 
     ansible.builtin.copy: 
       src: payment.service 
-      dest: /etc/systemd/sytem/payment.service 
+      dest: /etc/systemd/system/payment.service 
 
 
   - name: daemon reload 

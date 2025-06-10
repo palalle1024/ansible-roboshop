@@ -41,8 +41,9 @@
 
   - name: nginx config 
     ansible.builtin.copy: 
-      src: nginx.config 
+      src: nginx.conf 
       dest: /etc/nginx/nginx.conf 
+      
 
   
   - name: start and enable service 
